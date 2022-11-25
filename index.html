@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3d6bbb80b0.js" crossorigin="anonymous"></script>
+    <title>My portfolio</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <aside class="sidenav">
+        <div class="profile">
+        </div>
+        <hr width="90%"/>
+        <ul class="bar">
+            <li class="navtab active">
+                <a href="#header"><i class="fa fa-home"></i><span>Home</span></a>
+            </li>
+            <li class="navtab">
+                <a href="#about"><i class="fa fa-address-book-o"></i><span>About</span></a>
+            </li>
+            <li class="navtab">
+                <a href="#skills"><i class="fa fa-file-code-o"></i><span>Skills</span></a>
+            </li>
+            <li class="navtab">
+                <a href="#projects"><i class="fa fa-folder-o"></i><span>Projects</span></a>
+            </li>
+            <li class="navtab">
+                <a href="#contact"><i class="fa fa-phone-square"></i><span>Contact</span></a>
+            </li>
+            <li class="navtab">
+                <a href="#" class="blog"><i class="fa fa-laptop"></i><span>Blog</span></a>
+            </li>
+        </ul>
+    </aside>
+    
+    <div class="container">
+        <!-- Main header -->
+        <header id="header">
+            <div class="menubtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="home">
+                <h1><span>Hi!</span><b class="name"></b></h1>
+            
+                <p>
+                    A Web designer, Web developer, Fullstack Engineer, 
+                    Skilled PHP & SQL developer(Backend engineer), App Builder etc...
+                </p>
+            </div>
+        </header>
+        <!-- End of Header -->
+        
+        <!-- Page Contents -->
+        <div class="content">
+            <section class="about" id="about">
+                <h2>About</h2>
+                <div>
+                    My name is <b><em>Chimzi Frank <abbr title="junior">Jnr.</abbr> Owhor</em></b>
+                    I am a full stack web developer and a web designer.
+                    As a full stack web developer, I create the front-end structures(visible area) of website and 
+                    also the back-end (invisible area) part of web apps. I use technologies like PHP, JavaScript, etc. 
+                    to interact with databases, servers,
+                    use caches, API's. etc... to make web pages dynamic.
+                    As a web designer, i create beautiful eye catching websites that 
+                    keep you glued to your screens.
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <div>
+                    <ul>
+                        <li>
+                            HTML <span>95%</span>
+                            <div class="barbody">
+                                <div style="width:95%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            CSS <span>95%</span>
+                            <div class="barbody"><div style="width:95%"></div></div>
+                        </li>
+                        <li>
+                            JavaScript <span>80%</span>
+                            <div class="barbody"><div style="width:80%"></div></div>
+                        </li>
+                        <li>
+                            JQuery <span>70%</span>
+                            <div class="barbody"><div style="width:70%"></div></div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            PHP <span>60%</span>
+                            <div class="barbody"><div style="width:60%"></div></div>
+                        </li>
+                        <li>
+                            MySQL <span>70%</span>
+                            <div class="barbody"><div style="width:70%"></div></div>
+                        </li>
+                        <li>
+                            Python <span>30%</span>
+                            <div class="barbody"><div style="width:30%"></div></div>
+                        </li>
+                        <li>
+                            Flutter <span>40%</span>
+                            <div class="barbody"><div style="width:40%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <div>
+                    <div class="prjts">
+                        <div class="prjt pt1"></div>
+                        <div class="prjt pt2"></div>
+                        <div class="prjt pt3"></div>
+                        <div class="prjt pt4"></div>
+                    </div>
+                    <!--<div class="arrows">
+                        <a class="arrow left"><i class="fa fa-angle-left"></i></a> 
+                        <a class="arrow right"><i class="fa fa-angle-right"></i></a> 
+                    </div>-->
+                    <div class="dots">
+                        <div class="dot1 main" onclick="moveImg('0')"></div>
+                        <div class="dot2" onclick="moveImg('-50')"></div>
+                        <div class="dot3" onclick="moveImg('-100')"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contact</h2>
+                <div>
+                    <div class="info-container">
+                        <h3>Get In Touch</h3>
+                        <li class="info">
+                            <i class="fa fa-phone-square"></i>
+                            +2349016989115
+                        </li>
+                        <li class="info">
+                            <i class="fa fa-at"></i>
+                            chimzifrank@gmail.com
+                        </li>
+                        <li class="info">
+                            <i class="fa fa-map-marker"></i>
+                            NDDC Road, Elelenwo, Port Harcourt, Nigeria
+                        </li>
+                    </div>
+                    <div class="form-container">
+                        <form method="post" action="contact.php" enctype="multipart/form-data">
+                            <input type="text" name="name" id="name" placeholder="Fullname" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                            <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea><br/>
+                            <input type="submit" name="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <br/>
+            </section>
+        </div>
+        <!-- popup cover -->
+
+            <div class="pop-up-dark"></div>
+
+
+        <!--Footer Section-->
+        <footer>
+            <p class="copyright">
+                <i class="fa fa-copyright"></i> Copyright, 2022 Chimzi Frank Junior Owhor
+            </p>
+            <p class="socials">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social"><i class="fa fa-whatsapp"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social"><i class="fa fa-envelope"></i></a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js" differ></script>
+</body>
+</html>
